@@ -18,13 +18,14 @@ public class DieTester
         Die dieTest1 = new Die();
         System.out.println(dieTest1.toString());
 
-        //tests user inputted sides
+        /*tests user inputted sides
         Die dieTest2 = new Die(8);
         System.out.println(dieTest2.toString());
 
         //tests user inputted sides and the side it starts on
         Die dieTest3 = new Die(20, 1);
         System.out.println(dieTest3.toString());
+        */
 
         int[] rolls = new int[7];
         for(int i = 0; i < 100; i++) 
@@ -35,13 +36,20 @@ public class DieTester
         int mostFreq = 0;
         for(int i = 1; i < rolls.length; i++) 
         {
-            System.out.println(rolls[i]);
             if (rolls[i] > rolls[mostFreq]) 
             {
                 mostFreq = i;
             }
         }
-        System.out.println("Most frequently appearing side is: " + mostFreq);
+        for(int idx = 1; idx < rolls.length; idx++) 
+        {
+            System.out.println("\n" + idx + ". ");
+            for (int i = 0; i < rolls[idx]; i++) 
+            {
+                System.out.print("#");
+            }
+        }
+        System.out.println("\nMost frequently appearing side is: " + mostFreq);
     }
 
     /* 
