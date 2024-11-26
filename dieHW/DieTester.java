@@ -25,6 +25,23 @@ public class DieTester
         //tests user inputted sides and the side it starts on
         Die dieTest3 = new Die(20, 1);
         System.out.println(dieTest3.toString());
+
+        int[] rolls = new int[7];
+        for(int i = 0; i < 100; i++) 
+        {
+            dieTest1.roll();
+            rolls[dieTest1.getSide()]++;
+        }
+        int mostFreq = 0;
+        for(int i = 1; i < rolls.length; i++) 
+        {
+            System.out.println(rolls[i]);
+            if (rolls[i] > rolls[mostFreq]) 
+            {
+                mostFreq = i;
+            }
+        }
+        System.out.println("Most frequently appearing side is: " + mostFreq);
     }
 
     /* 
