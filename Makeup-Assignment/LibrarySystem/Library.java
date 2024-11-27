@@ -31,7 +31,8 @@ public class Library
         System.out.println();
 
             // view all books
-            if (actChoice == 1) {
+            if (actChoice == 1) 
+            {
                 System.out.println("Books Available: ");
                 for (int i = 0; i < bookList.size(); i++ ) 
                 {
@@ -54,7 +55,8 @@ public class Library
 
                 bookList.add(new Book(tempTitle, tempAuthor, tempYear));
             }   
-            else if (actChoice == 3) {
+            else if (actChoice == 3) 
+            {
                 System.out.println("Enter the book you would like to search for: ");
                 String tempSearch = scnr.nextLine();
             }
