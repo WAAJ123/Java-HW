@@ -59,6 +59,15 @@ public class Library
             {
                 System.out.println("Enter the book you would like to search for: ");
                 String tempSearch = scnr.nextLine();
+                for (int i = 0; i < bookList.size(); i++) 
+                {
+                    //FIXME Figure out how to search by title of book
+                }
+            }
+            else if (actChoice == 4)
+            {
+                System.out.println("Enter the book you would like to borrow: ");
+                //FIXME I probably need to finish the search function first.
             }
         }
     }
