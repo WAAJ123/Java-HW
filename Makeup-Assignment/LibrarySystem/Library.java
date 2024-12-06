@@ -72,3 +72,15 @@ public class Library
         }
     }
 }
+
+/* 
+Test Data: In order to test that what I have completed works, I made sure to 
+run multiple possible scenarios of adding books with different titles, authors, and years.
+
+Unfortunately because of my sickness I was not able to complete the search or borrowing
+functions of the program, but I also have no clue how to search for the title of a book
+when the title is stored in a private field. Do I need to make a method in the 
+Book class?
+
+This test data section was last updated on 12/5/2024
+*/
